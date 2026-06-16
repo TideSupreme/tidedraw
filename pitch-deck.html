@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TideDraw — Pitch Deck</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0D1117; }
+    .slide { width: 1280px; height: 720px; background: #fff; margin: 40px auto; border-radius: 16px; overflow: hidden; box-shadow: 0 20px 60px rgba(0,0,0,0.4); position: relative; }
+    .slide.dark { background: #0A2540; color: #fff; }
+    .content { padding: 60px 80px; height: 100%; display: flex; flex-direction: column; }
+    h1 { font-size: 48px; font-weight: 800; line-height: 1.1; margin-bottom: 20px; }
+    h2 { font-size: 32px; font-weight: 700; margin-bottom: 16px; }
+    p { font-size: 20px; line-height: 1.5; color: #64748B; }
+    .dark p { color: #94A3B8; }
+    .accent { color: #00D4AA; }
+    .navy { color: #0A2540; }
+    .stat { font-size: 72px; font-weight: 800; line-height: 1; }
+    .card { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 16px; padding: 24px; }
+    .flex { display: flex; gap: 24px; }
+    .flex-1 { flex: 1; }
+    .tag { display: inline-block; background: #00D4AA; color: #0A2540; padding: 6px 16px; border-radius: 20px; font-size: 14px; font-weight: 600; }
+    .screenshot { border: 1px solid #E2E8F0; border-radius: 12px; overflow: hidden; background: #fff; }
+    .screenshot-header { background: #F1F5F9; padding: 8px 16px; font-size: 13px; color: #64748B; border-bottom: 1px solid #E2E8F0; }
+  </style>
+</head>
+<body>
+
+<!-- Slide 1: Hook -->
+<div class="slide dark">
+  <div class="content" style="justify-content: center; text-align: center;">
+    <div style="margin-bottom: 24px;">
+      <span class="tag">SHARK TANK 2026</span>
+    </div>
+    <h1 style="font-size: 64px;">Every raffle is rigged.<br>Until now.</h1>
+    <p style="font-size: 24px; margin-top: 24px; max-width: 700px; margin-left: auto; margin-right: auto;">TideDraw lets the network pick the winner — not the organizer.</p>
+  </div>
+</div>
+
+<!-- Slide 2: Problem -->
+<div class="slide">
+  <div class="content" style="justify-content: center;">
+    <div class="tag" style="margin-bottom: 24px;">THE PROBLEM</div>
+    <h1 class="navy">The single point of control<br>is the root of every scandal.</h1>
+    <div class="flex" style="margin-top: 48px;">
+      <div class="flex-1 card">
+        <div style="font-size: 48px; margin-bottom: 12px;">🎯</div>
+        <div style="font-weight: 700; font-size: 20px; color: #0A2540;">Hand-picked winners</div>
+        <p style="font-size: 16px; margin-top: 8px;">"The boss's nephew won again."</p>
+      </div>
+      <div class="flex-1 card">
+        <div style="font-size: 48px; margin-bottom: 12px;">📋</div>
+        <div style="font-weight: 700; font-size: 20px; color: #0A2540;">List manipulation</div>
+        <p style="font-size: 16px; margin-top: 8px;">"Only 12 names on the list?"</p>
+      </div>
+      <div class="flex-1 card">
+        <div style="font-size: 48px; margin-bottom: 12px;">💰</div>
+        <div style="font-weight: 700; font-size: 20px; color: #0A2540;">Expensive auditors</div>
+        <p style="font-size: 16px; margin-top: 8px;">$180K per live-streamed draw.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Slide 3: Solution -->
+<div class="slide">
+  <div class="content">
+    <div class="tag" style="margin-bottom: 24px;">THE SOLUTION</div>
+    <h1 class="navy">TideDraw.<br>The network picks the winner.</h1>
+    <div style="margin-top: 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+      <div>
+        <h2 style="font-size: 22px; color: #0A2540;">Sealed Entries</h2>
+        <p style="font-size: 17px;">Entrants encrypt submissions with Tide self-encryption. Organizer literally cannot read them.</p>
+      </div>
+      <div>
+        <h2 style="font-size: 22px; color: #0A2540;">DPoP-Bound Draws</h2>
+        <p style="font-size: 17px;">Draw execution is device-bound. Token theft cannot rig the outcome.</p>
+      </div>
+      <div>
+        <h2 style="font-size: 22px; color: #0A2540;">Public Audit Trail</h2>
+        <p style="font-size: 17px;">Every draw produces a cryptographic proof anyone can verify — forever.</p>
+      </div>
+      <div>
+        <h2 style="font-size: 22px; color: #0A2540;">Zero Custodian</h2>
+        <p style="font-size: 17px;">No auditor. No escrow. No single party holds the list.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Slide 4: App Screenshot - Home -->
+<div class="slide">
+  <div class="content" style="padding: 40px 60px;">
+    <div style="margin-bottom: 20px;">
+      <span class="tag">LIVE PRODUCT</span>
+      <span style="margin-left: 16px; color: #64748B; font-size: 18px;">Dashboard — Post-Auth Home</span>
+    </div>
+    <div class="screenshot" style="height: 480px; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #0A2540 0%, #1a365d 100%); color: #fff; text-align: center; flex-direction: column;">
+      <div style="font-size: 48px; font-weight: 800; margin-bottom: 16px;">TideDraw</div>
+      <div style="font-size: 24px; opacity: 0.8;">1,284 draws run • 100% verified outcomes</div>
+      <div style="margin-top: 40px; display: flex; gap: 20px;">
+        <div style="background: rgba(255,255,255,0.1); padding: 16px 32px; border-radius: 12px;">🔐 Submit Sealed Entry</div>
+        <div style="background: rgba(255,255,255,0.1); padding: 16px 32px; border-radius: 12px;">🎲 Execute Verifiable Draw</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Slide 5: App Screenshot - Enter Flow -->
+<div class="slide">
+  <div class="content" style="padding: 40px 60px;">
+    <div style="margin-bottom: 20px;">
+      <span class="tag">LIVE PRODUCT</span>
+      <span style="margin-left: 16px; color: #64748B; font-size: 18px;">Encrypted Entry Submission — Powered by doEncrypt</span>
+    </div>
+    <div class="screenshot" style="height: 480px; display: flex; align-items: center; justify-content: center; background: #F8FAFC; flex-direction: column; padding: 40px;">
+      <div style="width: 100%; max-width: 480px;">
+        <div style="background: #fff; border: 1px solid #E2E8F0; border-radius: 16px; padding: 32px;">
+          <div style="font-weight: 700; font-size: 22px; color: #0A2540; margin-bottom: 24px;">Submit Sealed Entry</div>
+          <div style="background: #F1F5F9; padding: 12px; border-radius: 8px; font-size: 13px; color: #64748B; margin-bottom: 20px;">🔐 Your data is encrypted before it leaves your browser</div>
+          <button style="width: 100%; padding: 14px; background: #00D4AA; border: none; border-radius: 12px; font-weight: 700; font-size: 16px; cursor: pointer;">Seal Entry & Submit</button>
+          <div style="margin-top: 20px; padding: 16px; background: #ECFDF5; border-radius: 10px; font-size: 14px; color: #059669;">✓ Entry Sealed • Proof: td_a3f9k2m1</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Slide 6: Tide Tech Edge -->
+<div class="slide dark">
+  <div class="content" style="justify-content: center;">
+    <div class="tag" style="margin-bottom: 24px;">WHY TIDE ONLY</div>
+    <h1>What makes this possible?</h1>
+    <div style="margin-top: 40px; display: grid; gap: 24px;">
+      <div style="display: flex; gap: 24px; align-items: start;">
+        <div style="font-size: 32px;">🔐</div>
+        <div>
+          <div style="font-weight: 700; font-size: 22px;">doEncrypt / doDecrypt</div>
+          <p style="font-size: 17px;">Self-encryption means the server physically cannot read entrant data. No key ever leaves the client. This is the "we literally can't see it" guarantee.</p>
+        </div>
+      </div>
+      <div style="display: flex; gap: 24px; align-items: start;">
+        <div style="font-size: 32px;">🛡️</div>
+        <div>
+          <div style="font-weight: 700; font-size: 22px;">DPoP-Bound Tokens</div>
+          <p style="font-size: 17px;">Sessions are cryptographically bound to the organizer's device. A stolen token is inert elsewhere. Token theft cannot rig the draw.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Slide 7: Market -->
+<div class="slide">
+  <div class="content" style="justify-content: center;">
+    <h1 class="navy">Market timing is now.</h1>
+    <div style="margin-top: 40px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;">
+      <div class="card">
+        <div style="font-size: 14px; color: #64748B;">FORTUNE 500</div>
+        <div style="font-size: 42px; font-weight: 800; color: #0A2540; margin: 8px 0;">$2.1B</div>
+        <div style="font-size: 16px;">Annual spend on perk programs</div>
+      </div>
+      <div class="card">
+        <div style="font-size: 14px; color: #64748B;">EVENTS & CONFERENCES</div>
+        <div style="font-size: 42px; font-weight: 800; color: #0A2540; margin: 8px 0;">18K</div>
+        <div style="font-size: 16px;">Major events running raffles yearly</div>
+      </div>
+      <div class="card">
+        <div style="font-size: 14px; color: #64748B;">GOVERNMENT LOTTERIES</div>
+        <div style="font-size: 42px; font-weight: 800; color: #0A2540; margin: 8px 0;">$85B</div>
+        <div style="font-size: 16px;">Public trust crisis = regulatory pressure</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Slide 8: The Ask -->
+<div class="slide dark">
+  <div class="content" style="justify-content: center; text-align: center;">
+    <h1 style="font-size: 56px;">The Ask.</h1>
+    <p style="font-size: 24px; margin-top: 24px; max-width: 600px; margin-left: auto; margin-right: auto;">Your vote to bring verifiable fairness to every draw on earth.</p>
+    <div style="margin-top: 48px;">
+      <div style="display: inline-block; background: #00D4AA; color: #0A2540; padding: 16px 48px; border-radius: 12px; font-weight: 700; font-size: 20px;">TideDraw — The Network Picks the Winner</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
